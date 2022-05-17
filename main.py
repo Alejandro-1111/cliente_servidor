@@ -11,7 +11,7 @@ app = Flask('__main__')
 CODIGO DE PRUBE ES PURO COCHINERO
 """
 device ={
-    "code":"112233",
+    "code":"112234",
     "descrip": "Temp. Sensor",
     "value": 67
 }
@@ -31,7 +31,6 @@ def save_user():
 @app.route('/devices', methods=['POST'])
 def save_device():
     device = request.json
-    print(device)
     return device 
 
 #si name es igual a main ejecuta l app 
